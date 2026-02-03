@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Letter 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div id="envelope" class="close">
+      
+      <div class="front flap"></div>
+      <div class="front pocket"></div>
+
+      <div class="letter">
+        <div class="words line1">To My Love ❤️</div>
+        <div class="words line2">
+          Every time I see you,<br>
+          my world stops.
+        </div>
+        <div class="words line3">
+          You make my heart smile.
+        </div>
+        <div class="words line4">
+          Will you be mine? 💖
+        </div>
+      </div>
+
+    </div>
+
+    <div class="buttons">
+      <button onclick="openEnvelope()">OPEN</button>
+      <button onclick="closeEnvelope()">CLOSE</button>
+    </div>
+  </div>
+
+  <script>
+    const envelope = document.getElementById("envelope");
+
+    function openEnvelope() {
+      envelope.classList.remove("close");
+      envelope.classList.add("open");
+    }
+
+    function closeEnvelope() {
+      envelope.classList.remove("open");
+      envelope.classList.add("close");
+    }
+  </script>
+
+</body>
+</html>
